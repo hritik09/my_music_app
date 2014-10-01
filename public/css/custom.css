@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background: url('../img/background.jpg') no-repeat;
 }
 ol, ul {
 	list-style: none;
@@ -156,6 +157,8 @@ body#loginPage{
 .socialConnect_menu li img:hover{
 	cursor: pointer;
 }
+
+
 
 
 /*

@@ -10,4 +10,366 @@
  */
  *= require_self
  *= require_tree .
+
+ @import "bootstrap";
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: url('background.jpg') no-repeat;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset CSS ends */
+
+
+/*
+===========================================
+Fonts Used
+===========================================
+*/
+
+@font-face{
+	font-family: "Humanst521 BT Roman";
+	src: url('fonts/tt0290m_.ttf');
+}
+
+@font-face{
+	font-family: "Aver Regular";
+	src: url('fonts/Aver.ttf');
+}
+
+@font-face{
+	font-family: "Humanst521 Lt BT Light";
+	src: url('fonts/tt0288m_.ttf');
+}
+
+@font-face{
+	font-family: "Futura Bk BT Book";
+	src: url('fonts/tt0140m_.ttf');
+}
+
+
+
+/*
+===========================================
+Signup CSS
+===========================================
+*/
+
+
+.main > div {
+  display: inline-block;
+  width: 49%;
+  margin-top: 10px;
+
+}
+.one{
+    .register {
+       border: none; 
+        
+        h3 {
+          border-bottom-color: #909090;
+        }
+    
+        .sep{
+          border-color: #909090;
+        }
+    }
+}
+.register {
+  	width: 500px;
+  	margin: 10px auto;
+  	padding: 10px;
+  	border: 7px solid #72B372;
+  	border-radius: 10px;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  color: #444;
+	background-color: #1E90FF;
+  	
+  	box-shadow: 0 0 20px 0 #000000;
+  	
+  h3 {
+	  	margin: 0 15px 20px;
+	  	border-bottom: 2px solid #72B372;
+	  	padding: 5px 10px 5px 0;
+	  	font-size: 1.1em;
+	}
+
+	div{
+		margin: 0 0 15px 0;
+		padding: 20px 20px 5px 0;
+	  	border : none;
+	}
+
+	label {
+	  	display: inline-block;
+	  	width: 25%;
+	  	text-align: right;
+	  	margin: 10px
+	}
+
+	input[type=text], input[type=password]{
+  		width: 65%; 
+  		font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
+  		padding: 5px;
+  		font-size: 0.9em;
+  		border-radius: 5px;
+  		background: rgba(0, 0, 0, 0.07);
+	}
+  
+  input[type=text]:focus, input[type=password]:focus{
+		background: #FFFFFF;
+	}
+
+	.button {
+  		font-size: 1em;
+  		border-radius: 8px;
+  		padding: 10px;
+  		border: 1px solid #59B969;
+  		box-shadow: 0 1px 0 0 #60BD49 inset;
+  		@include linear-gradient(#63E651, #42753E);
+  		
+		&:hover {
+  			@include linear-gradient(#51DB1C, #6BA061);
+  		}
+	}
+	
+	.sep {
+	  	border: 1px solid #72B372;
+	  	position: relative;
+	  	margin: 35px 20px;
+	}
+
+	.or {
+	  	position: absolute;
+	  	width: 50px;
+	 	left: 50%;
+	  	background: #F0F0F0;
+	  	text-align: center;
+	  	margin: -10px 0 0 -25px;
+	  	line-height: 20px;
+	}
+
+	.connect {
+	  	width: 400px;
+	  	margin: 0 auto;
+	  	text-align: center;
+	}
+
+	.social-buttons {
+	  	display: inline-block;
+	  	min-width: 150px;
+	  	height: 50px;
+	  	margin: 0 5px 10px;
+	  	border-radius: 10px;
+	  	text-shadow: 1px 1px 5px #000000;
+
+	  	a {
+	  		display: block;
+	  		height: 100%;
+	  		text-decoration: none;
+	  		color: #FFFFFF;
+	  		padding: 10px 15px;
+		}
+
+		span {
+	  		font-size: 30px;
+	  		margin-left: 35px;
+		}
+	}
+
+	.facebook {
+	  	@include linear-gradient(#415EA3, #2E4A88);
+	  	
+	  	&:hover {
+			@include linear-gradient(#3B5591, #2A437C);
+		}
+
+		a {
+	  		background: url(fb_icon.png) no-repeat 5% 10%;
+		}
+	}
+
+	.twitter {
+	  	@include linear-gradient(#41C0F3, #3FBAEC);
+	  	
+		&:hover {
+	  		@include linear-gradient(#3EB1DF, #3EAAD6);
+	  	}
+
+		a {
+	  		background: url(twitter_icon.png) no-repeat 6% 25%;
+		}
+	}
+}
+
+/*
+============================================
+Login Page 
+============================================
+*/
+
+body#loginPage{
+	background-size: 100%;
+}
+
+.login_container{
+	padding-top: 50px;
+	padding-right: 50px;
+}
+
+.signup_button, .loginForm button{
+	float: right;
+	padding: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: none;
+	border-radius: 15px;
+	background: rgba(248, 35, 83, 0.7);
+	color: #F6F6F6;
+	font-family: "Humanst521 BT Roman";
+	font-size: 1.3em;
+}
+
+.signup_button:hover, .loginForm button:hover{
+	cursor: pointer;
+}
+
+.loginForm{
+	float: right;
+	margin-right: 10px;
+}
+
+.loginForm input{
+	border: none;
+	border-radius: 15px;
+	color: #444444;
+	font-family: "Aver Regular";
+	font-size: 1em;
+	padding: 8px;
+	background: #F6F6F6;
+}
+
+.loginForm button{
+	float: none;
+}
+
+.alternate_signIn_container{
+	clear: both;
+	float: right;
+}
+
+.alternate_signIn_text{
+	font-family: "Humanst521 Lt BT Light";
+	font-size: 1.2em;
+	color: #F6F6F6;
+	margin-right: 10px;
+}
+
+.socialConnect_menu{
+	display: inline-block;
+	position: relative;
+	top: 15px;
+}
+
+.socialConnect_menu li{ 
+	float: left;
+	margin-right: 20px;
+}
+
+.socialConnect_menu li img{
+	width: 35px;
+}
+
+.socialConnect_menu li img:hover{
+	cursor: pointer;
+}
+
+
+/*
+========================================
+Footer CSS 
+========================================
+*/
+
+footer{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.footerMenu{
+	margin: auto;
+	width: 680px;
+	padding-bottom: 30px;
+}
+
+.footerMenu li{
+	float: left;
+	padding-left: 18px;
+	padding-right: 20px;
+	font-family: "Futura Bk BT Book";
+	font-size: 1.1em;
+	background: url('../img/dot.png') no-repeat center right;
+}
+
+
+.footerMenu li:first-child{
+	padding-left: 0px;
+}
+
+.footerMenu li:last-child{
+	padding-right: 0px;
+	background: none;
+}
+
+.footerMenu li a{
+	text-decoration: none;
+	color: #F6F6F6;
+}
+
+.footerMenu li a:hover{
+	cursor: pointer;
+	color: rgba(248, 35, 83, 1);
+}
  

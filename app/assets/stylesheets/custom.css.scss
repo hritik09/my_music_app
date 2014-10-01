@@ -28,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background: url('background.jpg') no-repeat;
 }
 ol, ul {
 	list-style: none;
@@ -73,6 +74,8 @@ Fonts Used
 	src: url('fonts/tt0140m_.ttf');
 }
 
+
+
 /*
 ============================================
 Login Page 
@@ -80,7 +83,6 @@ Login Page
 */
 
 body#loginPage{
-	background: url('../img/background.jpg') no-repeat;
 	background-size: 100%;
 }
 
